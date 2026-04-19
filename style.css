@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right,#74eBd5,#b0d8b1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    width: 380px;
+    margin: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+#user-details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#user-details input {
+    flex: 1;
+}
+#feedback-section {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+}
+#rating-section {
+    margin-bottom: 15px;
+}
+#submit-section {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.5);
+}
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#feedback-section,
+#rating-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
